@@ -68,9 +68,7 @@ const main = {
 const electron = {
   mode: "development",
 
-  entry: {
-    electron: "./src/electron.ts"
-  },
+  entry: "./src/electron.ts",
 
   // this is required to electron main file
   target: "electron-main",
@@ -105,7 +103,7 @@ const electron = {
   ],
 
   output: {
-    filename: '[name].js',
+    filename: 'electron.js',
     path: path.resolve(__dirname, 'dist'),
   },
 };
