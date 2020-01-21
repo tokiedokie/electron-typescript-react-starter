@@ -4,7 +4,8 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "webpack && tsc --outDir dist src/electron.ts",
+    "watch": "webpack -w",
+    "electron": "electron dist/electron.js",
     "build": "webpack"
   },
   "devDependencies": {
