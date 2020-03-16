@@ -4,7 +4,7 @@ import { app, BrowserWindow } from 'electron'
 // be closed automatically when the JavaScript object is garbage collected.
 let win: BrowserWindow
 
-const createWindow = async (): Promise<void> => {
+const createWindow = (): void => {
   // Create the browser window.
   win = new BrowserWindow({
     width: 800,
@@ -15,7 +15,8 @@ const createWindow = async (): Promise<void> => {
   })
 
   // and load the index.html of the app.
-  await win.loadFile('index.html')
+  // eslint-disable-next-line @typescript-eslint/no-floating-promises
+  win.loadFile('index.html')
 
   // Open the DevTools.
   win.webContents.openDevTools()
