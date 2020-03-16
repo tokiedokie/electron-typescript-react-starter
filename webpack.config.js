@@ -37,7 +37,6 @@ const main = {
   },
 
   plugins: [
-    // new CleanWebpackPlugin(['dist/*']) for < v2 versions of CleanWebpackPlugin
     //new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       template: "./index.html"
@@ -104,4 +103,4 @@ const electron = {
   },
 };
 
-module.exports = [ main, electron]
+module.exports = [main, electron]
