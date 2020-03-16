@@ -3,8 +3,6 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 const main = {
-  mode: "development",
-
   target: "electron-renderer",
 
   entry: ["./src/index.tsx"],
@@ -66,8 +64,6 @@ const main = {
 };
 
 const electron = {
-  mode: "development",
-
   entry: "./src/electron.ts",
 
   // this is required to electron main file
